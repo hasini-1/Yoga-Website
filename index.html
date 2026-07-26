@@ -1,44 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Serenity Yoga</title>
-</head>
+  </head>
 
-<body class="bg-white text-black antialiased selection:bg-cyan-400 selection:text-slate-950">
-<header class="border-b border-gray-200 bg-white">
-    <nav class="flex items-center justify-between px-4 py-3">
-         <a href="#" class="flex items-center gap-3">
-            <img src="assests\images\letter-lowercase-circle-s-svgrepo-com.svg"
-             alt="Serenity Yoga Logo"
-             class="h-8 w-8">
-            SERENITY YOGA
+  <body
+    class="bg-white text-black antialiased selection:bg-cyan-400 selection:text-slate-950"
+  >
+    <header class="border-b border-gray-200 bg-white">
+      <nav class="flex items-center justify-between px-4 py-3">
+        <a href="#" class="flex items-center gap-3">
+          <img
+            src="assests\images\letter-lowercase-circle-s-svgrepo-com.svg"
+            alt="Serenity Yoga Logo"
+            class="h-8 w-8"
+          />
+          SERENITY YOGA
         </a>
         <button
-            id="menu-toggle"
-            type="button"
-            class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-gray-300 hover:border-cyan-400/50 hover:bg-cyan-400/10 md:hidden"
-            aria-label="Toggle navigation"
-            aria-expanded="false">
-            ☰
+          id="menu-toggle"
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-gray-300 hover:border-cyan-400/50 hover:bg-cyan-400/10 md:hidden"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
         </button>
-        <div
-            id="nav-links"
-            class="hidden md:flex items-center gap-4">
-            <a class="rounded-full border border-gray-300 px-5 py-2 text-sm hover:bg-gray-100 transition">About Us</a>
+        <div id="nav-links" class="hidden md:flex items-center gap-4">
+          <a
+            class="rounded-full border border-gray-300 px-5 py-2 text-sm hover:bg-gray-100 transition"
+            >About Us</a
+          >
 
-            <a class="rounded-full border border-gray-300 px-5 py-2 text-sm hover:bg-gray-100 transition">Reviews</a>
+          <a
+            class="rounded-full border border-gray-300 px-5 py-2 text-sm hover:bg-gray-100 transition"
+            >Reviews</a
+          >
 
-            <a class="rounded-full border border-gray-300 px-5 py-2 text-sm hover:bg-gray-100 transition">Trainers</a>
+          <a
+            class="rounded-full border border-gray-300 px-5 py-2 text-sm hover:bg-gray-100 transition"
+            >Trainers</a
+          >
 
-            <a class="rounded-full border border-gray-300 px-5 py-2 text-sm hover:bg-gray-100 transition">Classes</a>
-
+          <a
+            class="rounded-full border border-gray-300 px-5 py-2 text-sm hover:bg-gray-100 transition"
+            >Classes</a
+          >
         </div>
+      </nav>
+    </header>
+    <main>
+      <section class="max-w-7xl mx-auto mt-10 px-4">
+        <div class="overflow-hidden rounded-3xl bg-[#ece7fa]">
+          <div class="flex flex-col lg:flex-row items-center">
+            <div class="w-full lg:w-1/2 px-10 py-16">
+              <span
+                class="inline-block rounded-full border border-gray-400 bg-white/40 px-4 py-2 text-sm text-gray-700"
+              >
+                Mind-Body-Soul Balance
+              </span>
+              <h1 class="mt-6 text-5xl font-bold leading-tight text-black">
+                Achieve balance in
+                <br />
+                mind, body, and soul.
+              </h1>
+              <p class="mt-6 max-w-md text-gray-700">
+                Lorem ipsum dolor sit amet consectetur. Semper malesuada ut
+                ullamcorper sed tortor curabitur.
+              </p>
+            </div>
 
-    </nav>
-</header>
-
-</body>
+            <div class="relative w-full lg:w-1/2 h-[500px]">
+              <img
+                src="assests\images\alex-shaw-ldpBiWRiVZ4-unsplash-removebg-preview.png"
+                class="absolute right-0 bottom-0 h-full object-contain"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
