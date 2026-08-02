@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
     <title>Serenity Yoga</title>
   </head>
 
@@ -370,50 +371,228 @@
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <button
-              class="bg-white border border-gray-300 hover:border-gray-400 text-black text-sm font-medium py-2 px-4 rounded-full"
+      <section class="px-4 py-12 sm:px-6 lg:px-10 lg:py-20">
+    <div
+      class="mx-auto max-w-7xl overflow-hidden rounded-[32px] bg-[#f8f8f6]
+             px-6 py-12 sm:px-10 lg:rounded-[44px] lg:px-16 lg:py-20"
+    >
+      <div class="grid gap-14 lg:grid-cols-12 lg:gap-20">
+
+        <!-- Left Side -->
+        <div class="lg:col-span-5">
+          <span
+            class="inline-flex items-center rounded-full border border-black/15
+                   px-4 py-2 text-xs font-medium tracking-wide text-black/65"
+          >
+            Questions &amp; Answers
+          </span>
+
+          <h2
+            class="mt-6 max-w-lg text-4xl font-medium leading-[0.95]
+                   tracking-[-0.05em] sm:text-5xl lg:text-6xl"
+          >
+            Frequently<br />
+            Asked Questions<br />
+            <span class="text-black/45">(FAQ)</span>
+          </h2>
+
+          <p class="mt-8 max-w-sm text-sm leading-6 text-black/55 sm:text-base">
+            Find answers about our yoga classes here. From what to bring to
+            what to expect, we have gathered the most common questions.
+          </p>
+
+          <a
+            href="#contact"
+            class="mt-9 inline-flex items-center gap-3 rounded-full border
+                   border-black/15 px-5 py-3 text-sm font-medium transition
+                   hover:border-black hover:bg-black hover:text-white"
+          >
+            More questions
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1.8"
             >
-              Questions & Answers
-            </button>
-            <h1 class="text-2xl tracking-tight text-black sm:text-6xl mt-4">
-              Frequently
-            </h1>
-            <h1 class="text-1xl tracking-tight text-black sm:text-6xl">
-              Asked Questions
-            </h1>
-            <h1 class="text-1xl tracking-tight text-black sm:text-6xl">
-              (FAQ'S)
-            </h1>
-            <p class="mt-6 max-w-md text-black/70">
-              Lorem ipsum dolor sit amet consectetur. Semper malesuada ut
-              ullamcorper sed tortor curabitur.
-            </p>
-          </div>
-          <div>
-            <div>
-              <p>What should I Bring to the class ?</p>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 12h14m-5-5 5 5-5 5"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Accordion -->
+        <div class="lg:col-span-7">
+          <div class="divide-y divide-black/10">
+
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-button flex w-full items-start justify-between gap-6
+                       py-6 text-left"
+                aria-expanded="true"
+              >
+                <span class="text-base font-semibold sm:text-lg">
+                  What should I bring to a yoga class?
+                </span>
+
+                <span
+                  class="faq-icon mt-0.5 flex h-7 w-7 shrink-0 items-center
+                         justify-center text-2xl font-light"
+                >
+                  −
+                </span>
+              </button>
+
+              <div class="faq-content overflow-hidden transition-all duration-300">
+                <div class="max-w-2xl pb-7 pr-10 text-sm leading-6 text-black/55">
+                  Bring a yoga mat, a water bottle, and a towel. Comfortable
+                  clothing that allows for a full range of motion is also
+                  recommended. Some studios provide mats and other props, but
+                  it is always a good idea to check in advance.
+                </div>
+              </div>
             </div>
-            <div>
-              <p>Do I need to have prior experience to join the class ?</p>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-button flex w-full items-start justify-between gap-6
+                       py-6 text-left"
+                aria-expanded="false"
+              >
+                <span class="text-base font-semibold sm:text-lg">
+                  Do I need to have prior experience to join the class?
+                </span>
+
+                <span
+                  class="faq-icon mt-0.5 flex h-7 w-7 shrink-0 items-center
+                         justify-center text-2xl font-light"
+                >
+                  +
+                </span>
+              </button>
+
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="max-w-2xl pb-7 pr-10 text-sm leading-6 text-black/55">
+                  No prior experience is required. Our beginner-friendly classes
+                  include clear instructions and modifications for different
+                  levels of flexibility and fitness.
+                </div>
+              </div>
             </div>
-            <div>
-              <p>What types of yoga do you offer ?</p>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-button flex w-full items-start justify-between gap-6
+                       py-6 text-left"
+                aria-expanded="false"
+              >
+                <span class="text-base font-semibold sm:text-lg">
+                  What types of yoga do you offer?
+                </span>
+
+                <span
+                  class="faq-icon mt-0.5 flex h-7 w-7 shrink-0 items-center
+                         justify-center text-2xl font-light"
+                >
+                  +
+                </span>
+              </button>
+
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="max-w-2xl pb-7 pr-10 text-sm leading-6 text-black/55">
+                  We offer beginner yoga, Hatha yoga, Vinyasa flow, restorative
+                  yoga, mobility-focused sessions, and guided meditation
+                  classes.
+                </div>
+              </div>
             </div>
-            <div>
-              <p>How early Should I arrive for the class ?</p>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-button flex w-full items-start justify-between gap-6
+                       py-6 text-left"
+                aria-expanded="false"
+              >
+                <span class="text-base font-semibold sm:text-lg">
+                  How early should I arrive for class?
+                </span>
+
+                <span
+                  class="faq-icon mt-0.5 flex h-7 w-7 shrink-0 items-center
+                         justify-center text-2xl font-light"
+                >
+                  +
+                </span>
+              </button>
+
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="max-w-2xl pb-7 pr-10 text-sm leading-6 text-black/55">
+                  We recommend arriving 10 to 15 minutes before the class begins.
+                  This gives you enough time to check in, prepare your mat, and
+                  settle into the space.
+                </div>
+              </div>
             </div>
-            <div>
-              <p>What if i have a medical conditions or injury?</p>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-button flex w-full items-start justify-between gap-6
+                       py-6 text-left"
+                aria-expanded="false"
+              >
+                <span class="text-base font-semibold sm:text-lg">
+                  What if I have a medical condition or injury?
+                </span>
+
+                <span
+                  class="faq-icon mt-0.5 flex h-7 w-7 shrink-0 items-center
+                         justify-center text-2xl font-light"
+                >
+                  +
+                </span>
+              </button>
+
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="max-w-2xl pb-7 pr-10 text-sm leading-6 text-black/55">
+                  Speak with a qualified healthcare professional before
+                  participating, and inform the instructor before class. The
+                  instructor may suggest safer modifications or recommend a more
+                  suitable session.
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
+
       <section class="max-w-7xl mx-auto px-6 py-20">
         <div class="bg-[#F5F3FF] rounded-[40px] px-8 py-16 lg:px-16">
-          <!-- Top Section -->
           <div class="text-center">
             <h2 class="text-4xl md:text-5xl font-bold leading-tight text-black">
               Improve flexibility,
@@ -428,11 +607,11 @@
             </button>
           </div>
 
-          <!-- Footer -->
+          
           <div
             class="mt-20 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4"
           >
-            <!-- Logo -->
+          
             <div>
               <h3 class="text-4xl font-bold">SERENITY YOGA</h3>
 
@@ -440,7 +619,7 @@
                 Discover inner peace through yoga, mindfulness and meditation.
               </p>
 
-              <!-- Newsletter -->
+              
               <div
                 class="mt-10 flex overflow-hidden rounded-full border border-gray-300 bg-white"
               >
@@ -462,7 +641,7 @@
               </p>
             </div>
 
-            <!-- Inspiration -->
+          
 
             <div>
               <h4 class="text-xl font-semibold">Inspiration</h4>
@@ -500,7 +679,7 @@
               </ul>
             </div>
 
-            <!-- Company -->
+            
 
             <div>
               <h4 class="text-xl font-semibold">Company</h4>
@@ -522,7 +701,7 @@
               </ul>
             </div>
 
-            <!-- Contact -->
+          
 
             <div>
               <h4 class="text-xl font-semibold">Contact Info</h4>
@@ -567,6 +746,8 @@
           </div>
         </div>
       </section>
+
     </main>
+     <script src="./script.js"></script>
   </body>
 </html>
