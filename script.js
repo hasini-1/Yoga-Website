@@ -66,4 +66,5 @@ const navLinks = document.getElementById("nav-links");
 
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("hidden");
+  navLinks.classList.toggle("flex");
 });
